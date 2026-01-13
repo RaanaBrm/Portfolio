@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About Raana Barimani – Front-End Developer & IT Professional"
+    />
+    <title>About Me</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header>
+      <nav aria-label="Primary">
+        <div class="left">
+          <a href="index.html">Raana Barimani</a>
+        </div>
+
+        <ul class="right">
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown">
+            <button
+              type="button"
+              class="submenu-trigger"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              aria-controls="projects-submenu"
+            >
+              Projects <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+            </button>
+
+            <ul id="projects-submenu" class="submenu" role="menu">
+              <li role="none">
+                <a role="menuitem" href="tic-tac-toe.html">Tic Tac Toe</a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="weather.html">Weather App</a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ABOUT TEXT -->
+      <section class="about-section">
+        <h1 class="about-title">ABOUT ME</h1>
+
+        <article class="about-card">
+          <figure class="avatar">
+            <img
+              src="../assets/IMG_2220.JPG"
+              alt="Portrait of Raana Barimani"
+            />
+          </figure>
+
+          <div class="about-text">
+            <p>
+              As a dynamic and skilled IT professional with over five years of
+              comprehensive experience, I deliver high-quality technical support
+              and resolve complex issues across platforms. Expertise in
+              Microsoft Entra ID, Active Directory, and Intune to optimize
+              infrastructure and efficiency. I bridge technical and
+              non-technical stakeholders and lead service delivery improvements
+              with clear communication and strong troubleshooting.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills-section">
+        <h2>SKILLS</h2>
+
+        <div class="text">
+          Front-End Development: dynamic, responsive UI with JavaScript, React,
+          CSS, HTML.<br />
+          Cloud & Virtualization: Microsoft 365, AWS, virtual environments,
+          remote desktop, infra management.<br />
+          IT Support & SysAdmin: troubleshooting, Windows & cloud, AD, Microsoft
+          365, networks.<br />
+          Technical Product Management: service delivery, packaging/automation,
+          budgeting, vendor coordination.<br />
+          Project Leadership: cross-functional collaboration, stakeholder
+          communication.<br />
+          Technical Troubleshooting: SW/HW/network diagnosis, solutions, ongoing
+          support.
+        </div>
+
+        <div class="cells">
+          <div class="cell">
+            <img src="../assets/html-logo.webp" alt="HTML logo" /><span
+              >HTML</span
+            >
+          </div>
+          <div class="cell">
+            <img src="../assets/css-logo.webp" alt="CSS logo" /><span>CSS</span>
+          </div>
+          <div class="cell">
+            <img src="../assets/tech-logo.webp" alt="IT Technical logo" /><span
+              >IT Technical</span
+            >
+          </div>
+          <div class="cell">
+            <img
+              src="../assets/javascript-logo.webp"
+              alt="JavaScript logo"
+            /><span>JavaScript</span>
+          </div>
+          <div class="cell">
+            <img src="../assets/react-logo.webp" alt="React logo" /><span
+              >React.js</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>&copy; <span id="year"></span> Raana Barimani.</p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
