@@ -1,6 +1,6 @@
 /* ---------- About Page Layout ---------- */
 .about-section {
-  padding: 24px 50px;
+  padding: 24px 0;
 }
 
 .about-title {
@@ -47,7 +47,7 @@
 
 /* ---------- Skills Section ---------- */
 .skills-section {
-  padding: 12px 50px 30px;
+  padding: 12px 0 30px;
 }
 
 .skills-section h2 {
@@ -98,11 +98,6 @@
 
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
-  .about-section,
-  .skills-section {
-    padding: 18px 16px;
-  }
-
   .about-title {
     font-size: 34px;
   }
