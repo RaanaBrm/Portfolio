@@ -1,0 +1,341 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+  --card-bg: #ffffff;
+  --card-radius: 18px;
+  --container-max: 1400px;
+}
+
+/* ---------- Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* ---------- Links ---------- */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* ---------- Container ---------- */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/* ---------- Accessibility ---------- */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #fff;
+  color: #000;
+  padding: 8px 12px;
+  z-index: 9999;
+  border-radius: 8px;
+}
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+}
+
+/* ---------- Navbar ---------- */
+header {
+  background: rgba(238, 239, 241, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+nav .left a {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--link-color);
+}
+
+nav .right {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  align-items: center;
+}
+
+nav .right li {
+  position: relative;
+}
+
+nav .right a,
+.submenu-trigger {
+  margin: 0 10px;
+  color: var(--link-color);
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* ---------- Dropdown ---------- */
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px 0;
+  display: none;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  z-index: 50;
+}
+
+.submenu a {
+  display: block;
+  padding: 8px 14px;
+  color: var(--text-color);
+}
+
+.submenu a:hover {
+  background: #f4f5f7;
+}
+
+.submenu-trigger[aria-expanded="true"] + .submenu {
+  display: block;
+}
+
+/* ---------- About Card ---------- */
+.about-section {
+  padding: 40px 0;
+}
+
+.about-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about-card {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.avatar {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  flex: 0 0 300px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.avatar img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.about-text {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.about-text p + p {
+  margin-top: 12px;
+}
+
+/* ---------- Blue GitHub/LinkedIn icon links ---------- */
+.social-links {
+  margin-top: 14px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--link-color);
+}
+
+.social-icon i {
+  font-size: 18px;
+}
+
+.social-icon:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Project Page ---------- */
+.project-page {
+  padding: 40px 0;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.project-card img {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  flex: 0 0 320px;
+}
+
+.project-info h1 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.project-info p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+/* GitHub link style like About */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--link-color);
+}
+
+.github-link i {
+  font-size: 18px;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 22px 0;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* ---------- Responsive (Only content, navbar unchanged) ---------- */
+@media (max-width: 780px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  /* About */
+  .about-section {
+    padding: 22px 0;
+  }
+
+  .about-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .about-card {
+    flex-direction: column; /* مهم: چون قبلاً flex بود */
+    padding: 14px;
+    gap: 12px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  }
+
+  .avatar {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .about-text {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+
+  .social-links {
+    margin-top: 10px;
+    gap: 12px;
+  }
+
+  /* Project */
+  .project-page {
+    padding: 22px 0 28px;
+  }
+
+  .project-card {
+    flex-direction: column;
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .project-card img {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .project-info h1 {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+
+  .project-info p {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+}
