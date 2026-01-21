@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Raana Barimani – Front-End Developer & IT Professional"
+    />
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="page-contact">
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- NAVBAR -->
+    <header>
+      <nav aria-label="Primary" class="container">
+        <div class="left">
+          <a href="index.html">Raana Barimani</a>
+        </div>
+
+        <ul class="right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="contact.html" aria-current="page">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main">
+      <section class="contact-section">
+        <div class="group">
+          <h1>Contact</h1>
+
+          <div class="text">
+            Send me a message and I’ll get back to you as soon as possible.
+          </div>
+
+          <form
+            action="mailto:raanabarimani1994@yahoo.com"
+            method="post"
+            enctype="text/plain"
+            class="contact-form"
+          >
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="7" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Raana Barimani.</p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
