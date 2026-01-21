@@ -1,0 +1,68 @@
+.project-page {
+  padding: 40px 0;
+}
+
+.project-card {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.project-card img {
+  width: 320px;
+  max-width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-info h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.project-info p {
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+/* GitHub icon link */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--link-color);
+}
+
+.github-link i {
+  font-size: 18px;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 780px) {
+  .project-card {
+    flex-direction: column;
+    padding: 16px;
+    gap: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  }
+
+  .project-info h1 {
+    font-size: 24px;
+  }
+}
